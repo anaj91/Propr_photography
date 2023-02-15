@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  line-height: 1.8;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color)
+}
+
+p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  line-height: 1.4;
+}
+
+img {
+  width: 100%;
+}
+
+/*Navbar*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  max-width: var(--max-width);
+  margin: auto;
+  height: 8vh;
+  padding: 0 30px;
+  border-bottom: var(--secondary-color) 3px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 0 15px;
+  margin: 0 5px;
+}
+
+.navbar a:hover,
+.navbar .current {
+  color: var(--secondary-color);
+}
+
+.logobar a:hover {
+  color: #fff;
+}
+
+.logobar {
+  display: block;
+  height: auto;
+  width: 70px;
+}
+
+/*Header*/
+
+.container {
+  background-color: #000;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: auto;
+}
+
+/* About */
+
+#about video {
+  max-width: 70vw;
+}
+
+#about .flex-items h3 {
+  font-size: 40px;
+  font-weight: 900;
+  padding: 20px 0 20px 0;
+  max-width: 30vw;
+  color: #000;
+}
+
+#about .flex-items h4 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+#about .flex-items p {
+  font-weight: 700;
+  max-width: 60vw;
+}
+
+#about .flex-items {
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Usluge */
+
+.grid {
+  width: 100vw;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.grid div {
+  padding: 10px 10px;
+}
+
+.grid h3 {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.grid p {
+  font-size: 15px;
+}
+
+.fa-color {
+  color: var(--secondary-color)
+}
+
+/* About page */
+
+#about-page .about-content {
+  max-width: var(--max-width);
+  margin: auto;
+  overflow: hidden;
+}
+
+.about-content .flex-items {
+  display: flex;
+  padding-left: 50px;
+  padding-top: 50px;
+  height: 77vh;
+}
+
+.content {
+  width: 60vw;
+}
+
+.flex-items p {
+  font-size: 15px;
+  padding: 20px 50px 0 0;
+}
+
+.flex-items h3 {
+  color: var(--secondary-color);
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.flex-items h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.img-about {
+  width: 600px;
+  overflow: hidden;
+  align-self: center;
+}
+
+/*Page Videos*/
+
+#posnetki,
+#photos {
+  overflow: hidden;
+}
+
+.videos-container {
+  height: 77vh;
+  width: var(--max-width);
+  background-color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+
+.video-container {
+  display: flex;
+  height: 77vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.video {
+  width: 60vw;
+  justify-self: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 34vh;
+  transform: translateY(-50%);
+  background-color: var(--secondary-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.arrow-video {
+  top: 46vh;
+}
+
+.arrow-left {
+  left: 17vw;
+}
+
+.arrow-right {
+  right: 17vw;
+}
+
+/* Photos*/
+
+.photos-container {
+  height: 77vh;
+  background-color: var(--primary-color);
+  position: relative;
+
+}
+
+.photo {
+  opacity: 0;
+  height: 100%;
+  width: 50%;
+  left: 25%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  transition: 0.4s ease;
+}
+
+.photo.active {
+  opacity: 1;
+}
