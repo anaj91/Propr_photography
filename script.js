@@ -13,18 +13,7 @@ arrowLeft.addEventListener('click', loadPreviousVideo)
 function loadNextVideo() {
   var filename = '';
   if (source.getAttribute("src") == "video/wedding_intro.mp4") {
-    filename = "event_intro";
-  }
-  else if (source.getAttribute("src") == "video/event_intro.mp4") {
-    filename = "dog_intro";
-  }
-  else if (source.getAttribute("src") == "video/dog_intro.mp4") {
-    filename = "football_intro";
-  }
-  else if (source.getAttribute("src") == "video/football_intro.mp4") {
     filename = "baby_intro";
-  } else if (source.getAttribute("src") == "video/baby_intro.mp4") {
-    filename = "castle_intro";
   } else {
     filename = "wedding_intro";
   }
@@ -37,26 +26,10 @@ function loadNextVideo() {
 
 function loadPreviousVideo() {
   var filename = '';
-  if (source.getAttribute("src") == "video/wedding_intro.mp4") {
-    filename = "castle_intro";
-  }
-  else if (source.getAttribute("src") == "video/castle_intro.mp4") {
-    filename = "baby_intro";
-  }
-  else if (source.getAttribute("src") == "video/baby_intro.mp4") {
-    filename = "football_intro";
-  }
-  else if (source.getAttribute("src") == "video/football_intro.mp4") {
-    filename = "dog_intro";
-  }
-  else if (source.getAttribute("src") == "video/dog_intro.mp4") {
-    filename = "event_intro";
-  }
-  else if (source.getAttribute("src") == "video/event_intro.mp4") {
+  if (source.getAttribute("src") == "video/baby_intro.mp4") {
     filename = "wedding_intro";
-  }
-  else {
-    filename = "castle_intro";
+  } else {
+    filename = "baby_intro";
   }
 
   source.src = "video/" + filename + ".mp4";
